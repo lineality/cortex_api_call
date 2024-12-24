@@ -50,8 +50,8 @@ is not sufficient to get the code working.
 
 1. The notation system for actually connecting to a model should be this:
 
-Convert the last two parts of the full file path in an undocumented colon-demarcated notation. 
-The cortex "name" of your model is the last two parts of the model path
+Convert the last three parts of the full file path in an undocumented colon-demarcated notation. 
+The cortex "name" of your model is the last three parts of the model path
 separated by a colon.
 
 ### e.g.
@@ -60,7 +60,7 @@ The path to your model will be something like this:
 /home/YOURCOMPUTERNAME/cortexcpp/models/huggingface.co/bartowski/Mistral-Nemo-Instruct-2407-GGUF/Mistral-Nemo-Instruct-2407-Q6_K_L.gguf
 ```
 
-# Use the last two path segments with a colon ":" between them:
+# Use the last three path segments with a colon ":" between them:
 ```
     So, "/Mistral-Nemo-Instruct-2407-GGUF/Mistral-Nemo-Instruct-2407-Q6_K_L.gguf" becomes ->
     "model": "bartowski:Mistral-Nemo-Instruct-2407-GGUF:Mistral-Nemo-Instruct-2407-Q6_K_L.gguf",
@@ -161,7 +161,7 @@ def call_cortex_api(
         }
         
         data = {
-            # use last two path segments with : between
+            # use last three path segments with : between
             "model": cortex_model,
             # using path will NOT work "model": "/home/YOURCOMPUTERNAME/cortexcpp/models/huggingface.co/bartowski/Mistral-Nemo-Instruct-2407-GGUF/Mistral-Nemo-Instruct-2407-Q6_K_L.gguf",
             "messages": [
