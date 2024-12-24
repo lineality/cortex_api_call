@@ -68,6 +68,10 @@ The path to your model will be something like this:
 ```
     So, "/Mistral-Nemo-Instruct-2407-GGUF/Mistral-Nemo-Instruct-2407-Q6_K_L.gguf" becomes ->
     "model": "bartowski:Mistral-Nemo-Instruct-2407-GGUF:Mistral-Nemo-Instruct-2407-Q6_K_L.gguf",
+
+    or:
+
+    "model": "janhq:trinity-v1.2-GGUF:trinity-v1.2.Q8_0.gguf"
 ```
 # using a path will NOT work "model": "/home/YOURCOMPUTERNAME/cortexcpp/models/huggingface.co/bartowski/Mistral-Nemo-Instruct-2407-GGUF/Mistral-Nemo-Instruct-2407-Q6_K_L.gguf",
 
