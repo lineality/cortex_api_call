@@ -21,6 +21,10 @@ curl -s https://raw.githubusercontent.com/janhq/cortex/main/engine/templates/lin
 ```bash
 cortex pull bartowski/Mistral-Nemo-Instruct-2407-GGUF
 ```
+or
+```bash
+cortex pull janhq/trinity-v1.2-GGUF
+```
 Note: for a ~custom model you may need to make your own yaml file to match the cortex system, 
 hopefully very straightforward.
 
